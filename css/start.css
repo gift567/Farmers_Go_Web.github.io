@@ -1,0 +1,322 @@
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	
+}
+
+
+
+*{
+	box-sizing: border-box;
+	transition: all .2s linear;
+}
+
+
+
+
+nav {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	
+}
+nav .logo a{
+    text-decoration: none;
+    color: #fff;
+}
+nav .logo  {
+    padding: 10px;
+	float: left;
+	border-radius: 60%;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
+   font-family: sans-serif;
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #fff;
+   border-radius: 3px;
+   padding: 7px 13px;
+
+	text-decoration: none;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+.active, nav a:hover{
+   background-color: rgb(78, 189, 75);
+   transition: .5s;
+   border-bottom: none;
+ 
+   }
+   nav .links a:hover{
+      color: white;
+   
+
+
+   }
+
+
+   .banner{
+    background-image: url('/image/hos4.jpg');
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2%;
+    margin: 0px;
+ }
+
+ .name{
+    color: #fff;
+    font-family: sans-serif;
+    float: left;
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+ 
+   .container{
+    margin-top: 13.7%;
+    display: flex;
+ 	margin-left: 2%;
+  	min-height: 9vh;
+  	text-decoration: none;
+ }
+ 
+ .container button{
+    height: 50px;
+    width: 150px;
+    background: #333;
+    color: rgb(236, 223, 223);
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0,0,.3);
+  
+
+}
+
+.container button:hover{
+    opacity: .8;
+}
+
+.header__fade {
+	position: absolute;
+	height: 110vh;
+	width: 110vw;
+	top: 0;
+	background-image: linear-gradient(to right, rgba(32, 214, 102, 0.418), rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1));
+}
+
+
+/* login/signup */
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    color: #fff;
+    background-color: rgba(126, 123, 215, 0.3);
+    min-width: 500px;
+    min-height: 500px;
+    border-radius: 15px;
+	margin-right: 100px;
+	margin-top: 10px;
+}
+.card h3{
+    padding: 30px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.form-group{
+    font-size: 20px;
+    margin: 20px;
+}
+.form-group input{
+    display: block;
+    width: 90%;
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    height: 30px;
+    font-size: 20px;
+    box-shadow: 0 1px 0 0 #fff;
+    transition: all .5s linear;
+}
+.form-group input:focus,
+.form-group input:valid{
+    outline: none;
+    height: 60px;
+}
+.card .btn{
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #4fb174;
+    color: #000;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px
+	
+}
+.card .btn:focus{
+    outline: none;
+}
+.card .btn:hover{
+    background-color: #0f3b23;
+	text-decoration: none;
+}
+.card .btn:active {
+    position: relative;
+    top: 2px;
+}
+.card a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+	/* gifts */
+	.vid-text{
+		top: 35%;
+		width: 50%;	
+		height: 60%;	
+	}
+	.vid-text a {
+		left: 30%;
+	}
+	nav .logo {
+		float: left;
+		width: auto;
+		
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 95px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: #000;
+      	opacity: 0.8;
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+		z-index: 2000;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	.header__fade{
+		background-image: linear-gradient(to right, rgba(129, 24, 73, 0.418), rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.3));
+	}
+	.videos__header > h1 {
+		font-size: 2.4rem;
+	}
+
+    .name{
+        font-size: 20px;
+        margin-top: 35%;
+        padding: 5%;
+        
+    }
+    .container  {
+    margin-top: 29.5%;
+
+    }
+
+}
